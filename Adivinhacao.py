@@ -7,11 +7,13 @@ numeroSecreto = 42
 numeroEntrada = input("Informe o número secreto: ")
 
 numeroEntradaConvertido = int(numeroEntrada)
+acertou = numeroSecreto == numeroEntradaConvertido
+numeroMaiorNumeroSecreto = numeroEntradaConvertido > numeroSecreto
 
-if(numeroSecreto == numeroEntradaConvertido) :
+if(acertou) :
     print("Você descobriu o número secreto!")
 else :
-    if numeroEntradaConvertido > numeroSecreto:
+    if numeroMaiorNumeroSecreto:
         print("Você errou! Seu valor foi maior que o número secreto")
     else :
         print("Você errou! Seu valor foi menor que o número secreto")

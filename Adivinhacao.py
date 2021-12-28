@@ -8,7 +8,7 @@ def jogar():
     numeroSecreto = random.randrange(1, 101)
     tentativas = 0
     pontos = 1000
-    print(numeroSecreto)
+
     print("Qual o nível de dificuldade você deseja :")
     print("(1) - Fácil | (2) - Médio | (3) - Díficil")
 
@@ -42,3 +42,7 @@ def jogar():
             pontos_perdidos = abs(numeroSecreto - numeroEntrada)
             pontos = pontos - pontos_perdidos
     print("Fim de jogo!")
+
+if(__name__ == "__main__"):
+    jogar()
+

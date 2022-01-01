@@ -4,8 +4,11 @@ def jogar():
     print("--------------------")
 
     palavraSecreta = "batata"
+    letras_acertadas = ["_","_","_","_","_","_"]
     enforcou = False
     acertou = False
+
+    print(letras_acertadas)
 
     while(not enforcou and not acertou):
 
@@ -14,8 +17,9 @@ def jogar():
         posicao = 0
         for letra in palavraSecreta:
             if (entrada.upper() == letra.upper()):
-                print("Encontrei a letra {} na posição {}".format(letra, posicao))
+                letras_acertadas[posicao] = letra
             posicao += 1
+        print(letras_acertadas)
     print("Fim de jogo!")
 
 if(__name__ == "__main__"):
